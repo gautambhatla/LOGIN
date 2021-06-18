@@ -11,10 +11,15 @@
 	<div class="container__form container--signup">
 		<form action="#" class="form" id="form1">
 			<h2 class="form__title">Sign Up</h2>
-			<input type="text" placeholder="User" class="input" />
-			<input type="email" placeholder="Email" class="input" />
-			<input type="password" placeholder="Password" class="input" />
-			<button class="btn">Sign Up</button>
+			<input type="text" placeholder="User" class="input" id="Username"/>
+			<p id="username-err" class="input-err">Please enter a valid Username</p>
+			<input type="email" placeholder="Email" class="input" id="email" />
+			<p id="email-err" class="input-err">You have entered an invalid E-mail</p>
+			<input type="password" placeholder="Password" class="input" id="pass"/>
+			<p id="pass-err" class="input-err">Please use a strong password</p>
+			<input type="password" placeholder="Re-Enter Password" class="input" id="pVer"/>
+			<p id="pVer-err" class="input-err">password does not matches</p>
+			<button class="btn" id="signUpSub">Sign Up</button>
 		</form>
 	</div>
 
@@ -22,10 +27,10 @@
 	<div class="container__form container--signin">
 		<form action="#" class="form" id="form2">
 			<h2 class="form__title">Sign In</h2>
-			<input type="email" placeholder="Email/Username" class="input" />
-			<input type="password" placeholder="Password" class="input" />
-			<a href="#" class="link">Forgot your password?</a>
-			<button class="btn">Sign In</button>
+			<input type="email" placeholder="Email/Username" class="input" id="UserEM" />
+			<input type="password" placeholder="Password" class="input" id = "PassChk" />
+			<a href="https://tarunsingh611.github.io/UnderConstruction/" class="link">Forgot your password?</a>
+			<button class="btn" id="signInSub">Sign In</button>
 		</form>
 	</div>
 

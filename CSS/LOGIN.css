@@ -84,6 +84,7 @@ body {
 	opacity: 1;
 	transform: translateX(100%);
 	z-index: 5;
+	margin-bottom: 0%;
 }
 
 .container__overlay {
@@ -193,9 +194,23 @@ body {
 	background-color: #fff;
 	border: none;
 	padding: 0.9rem 0.9rem;
-	margin: 0.5rem 0;
 	width: 100%;
+	margin-bottom:0%;
+	margin-left: 2%;
+	margin-top:1rem;
 }
+
+.input-err{
+	color:red;
+	font-size:80%;
+	letter-spacing: 0.5px;
+	margin:0%;
+}
+#pass-err{display:none;}
+#username-err{display:none;}
+#email-err{display:none;}
+#pVer-err{display:none;}
+
 
 @keyframes show {
 	0%,
