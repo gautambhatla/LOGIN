@@ -2,25 +2,26 @@
 <HTML>
 <HEAD>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<LINK rel="stylesheet" href="CSS/LOGIN.css">
+ 	<LINK rel="stylesheet" href="CSS/LOGIN.css">
 	<TITLE>LOGIN</TITLE>
 </HEAD>
 <BODY>
-	<h1 align="center"> THIS IS HEADING </h1> 
+	<h1 align="center"> AUTHENTICATION PAGE </h1> 
 <div class="container right-panel-active">
 	<!-- Sign Up -->
 	<div class="container__form container--signup">
 		<form action="#" class="form" id="form1">
 			<h2 class="form__title">Sign Up</h2>
-			<input type="text" placeholder="User" class="input" id="Username"/>
+			<input type="text" placeholder="User" autocomplete="off" class="input" id="Username"/>
 			<p id="username-err" class="input-err">Please enter a valid Username</p>
-			<input type="email" placeholder="Email" class="input" id="email" />
+			<input type="email" autocomplete="off" placeholder="Email" class="input" id="email" />
 			<p id="email-err" class="input-err">You have entered an invalid E-mail</p>
-			<input type="password" placeholder="Password" class="input" id="pass"/>
+			<input type="password" placeholder="Password" autocomplete="off" class="input" id="pass"/>
 			<p id="pass-err" class="input-err">Please use a strong password</p>
-			<input type="password" placeholder="Re-Enter Password" class="input" id="pVer"/>
+			<input type="password" placeholder="Re-Enter Password" autocomplete="off" class="input" id="pVer"/>
 			<p id="pVer-err" class="input-err">password does not matches</p>
 			<button class="btn" id="signUpSub">Sign Up</button>
+			
 		</form>
 	</div>
 
@@ -29,9 +30,10 @@
 		<form action="#" class="form" id="form2">
 			<h2 class="form__title">Sign In</h2>
 			<input type="email" placeholder="Email/Username" class="input" id="UserEM" />
-			<input type="password" placeholder="Password" class="input" id = "PassChk" />
+			<input type="password" placeholder="Password" autocomplete="off" class="input" id = "PassChk" />
 			<a href="https://tarunsingh611.github.io/UnderConstruction/" class="link">Forgot your password?</a>
 			<button class="btn" id="signInSub">Sign In</button>
+			<p id="new_user"> <a id="signUp1"> New User? SignUp</a></p>
 		</form>
 	</div>
 
@@ -53,4 +55,5 @@
 	</audio></br>
 
 </BODY>
-<script src="JS/LOGIN.js"></script></HTML>
+ <script src="JS/LOGIN.js"> </script>
+</HTML>

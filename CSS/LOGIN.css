@@ -47,7 +47,7 @@ body {
 	background-color: var(--white);
 	border-radius: var(--button-radius);
 	box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
-		0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+	0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);	
 	height: var(--max-height);
 	max-width: var(--max-width);
 	overflow: hidden;
@@ -206,6 +206,11 @@ body {
 	letter-spacing: 0.5px;
 	margin:0%;
 }
+
+#new_user{
+	display: none;
+}
+
 #pass-err{display:none;}
 #username-err{display:none;}
 #email-err{display:none;}
@@ -224,4 +229,50 @@ body {
 		opacity: 1;
 		z-index: 5;
 	}
+}
+
+
+@media only screen and (max-width:700px){
+
+	.container {
+		height: var(--max-height);
+		max-width: var(--max-width);
+		overflow: hidden;
+		position: relative;
+		width: 70%;
+	}
+
+	audio{
+		display: none;
+	}
+
+	.container__overlay.overlay__panel .overlay--left .btn{
+		display: none;
+	}
+
+	.container.right-panel-active .container__overlay {
+		
+		transform: translateX(-100%);
+	}
+
+	.container__overlay {
+		left: 100%;
+		width: 100%;
+	}
+
+	.container--signin {
+		left: 0;
+		width: 100%;
+	}
+	
+	#new_user{
+		display:block;
+	}
+
+	#new_user:hover{
+		text-decoration: underline ;
+	}
+
+
+	
 }
