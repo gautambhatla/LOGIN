@@ -211,6 +211,11 @@ body {
 	display: none;
 }
 
+.sound .btn{
+	display: none;
+	background-color: rgb(10, 10, 10);
+}
+
 #pass-err{display:none;}
 #username-err{display:none;}
 #email-err{display:none;}
@@ -271,6 +276,11 @@ body {
 
 	#new_user:hover{
 		text-decoration: underline ;
+	}
+
+	.sound .btn{
+		display: block;
+		background-color: rgb(10, 10, 10);
 	}
 
 

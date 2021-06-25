@@ -4,6 +4,7 @@ const signUpBtn = document.getElementById("signUp");
 const fistForm = document.getElementById("form1");
 const secondForm = document.getElementById("form2");
 const container = document.querySelector(".container");
+const introBtn = document.getElementById("intro");
 
 signInBtn.addEventListener("click", () => {
 	container.classList.remove("right-panel-active");
@@ -124,3 +125,11 @@ signIN.addEventListener("click", () => {
 
 	else{alert("enter a registered username")};}
 )	
+
+
+//Intro
+var sound = document.getElementById("voice");
+introBtn.addEventListener("click", () => {
+	voice.style.display = 'block' ;
+	introBtn.style.display = 'none' ;
+});
